@@ -7,7 +7,7 @@ interface PageProps {
     [key: string]: string | string[] | undefined;
   };
 }
-const page = async ({ searchParams }: PageProps) => {
+const Page = async ({ searchParams }: PageProps) => {
   const { id } = searchParams;
   // make a db call
   if (!id || typeof id !== "string") {
@@ -33,4 +33,4 @@ const page = async ({ searchParams }: PageProps) => {
   );
 };
 
-export default page;
+export default Page;
