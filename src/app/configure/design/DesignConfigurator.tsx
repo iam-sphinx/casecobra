@@ -336,7 +336,7 @@ const DesignConfigurator = ({
                                 >
                                   {option.label}
                                 </RadioGroup.Label>
-                                {option?.description ? (
+                                {option.description ? (
                                   <RadioGroup.Description
                                     as="span"
                                     className="text-gray-500"
